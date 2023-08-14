@@ -109,4 +109,6 @@ app.use(async ctx => {
 `;
 });
 
-app.listen(9000);
+app.listen(9000, '0.0.0.0', () => {
+  console.log('listening on port 9000');
+});
